@@ -26,6 +26,64 @@
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
+  
+  <style type="text/css">
+  form{
+    width: 100%;
+    background-color: #e4e4e4;
+    border-style: groove;
+    border-radius: 20px;
+    margin-top: 20px;
+    padding: 15px;
+    box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.6);
+-webkit-box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.6);
+-moz-box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.6);
+
+  }
+  input, select{
+    width: 100%;
+    background-color: #fff;
+    border-style: groove;
+    border-radius: 5px;
+    padding: 5px;
+    
+  }
+  input[type=radio], input[type=checkbox]{
+    width: 10%;
+    margin: 10px;
+    padding: 10px;
+  }
+  label{
+    font-weight: bold;
+    margin: 5px;
+  }
+  center{
+    width: 100%;
+    background-color: #eb5d1e;
+    color: #fff;
+    border-style: hidden;
+    border-radius: 10px;
+    
+    padding: 5px;
+  }
+  .container-fluid .row{
+    margin: 10px;
+    padding: 10px;
+  }
+  .instructions {
+    width: 100%;
+    background-color: #e4e4e4;
+    border-style: groove;
+    border-radius: 20px;
+    margin-right: 15px;
+    margin-top: 20px;
+    padding: 15px;
+    box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.6);
+-webkit-box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.6);
+-moz-box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.6);
+
+  }
+  </style>
 
   <!-- =======================================================
   * Template Name: Ninestars - v4.6.0
@@ -49,11 +107,11 @@
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="index.php#hero">Home</a></li>
           <li><a class="nav-link scrollto" href="#about">About Us</a></li>
           <li><a class="nav-link scrollto" href="#services">Services</a></li>
           <li><a class="nav-link scrollto" href="#portfolio">Portfolio</a></li>
-          <li><a class="nav-link scrollto" href="#register">Register</a></li>
+          <li><a class="nav-link scrollto <?php if(basename($_SERVER['PHP_SELF'])=='register.php'){ echo 'active';}?>" href="register.php">Register</a></li>
           <li><a class="nav-link scrollto" href="#team">Team</a></li>
           <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
@@ -73,7 +131,7 @@
             </ul>
           </li>
           <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
-          <li><a class="getstarted scrollto" href="#about">Get Started</a></li>
+          <li><a class="getstarted scrollto" href="login.php">LogIn</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->

@@ -94,6 +94,7 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script src="https://use.fontawesome.com/57411d64c8.js"></script>
 
 </body>
 

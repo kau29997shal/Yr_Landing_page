@@ -88,7 +88,7 @@ include"head.php";
                   <label>Religion</label>
                   <select>
                         <option>--select--</option>
-                        <option>--select--</option>
+                        <option>Hindu</option>
                         <option>--select--</option>
                   </select>
             </div>

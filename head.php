@@ -57,7 +57,7 @@
     font-weight: bold;
     margin: 5px;
   }
-  center{
+  #Register center{
     width: 100%;
     background-color: #eb5d1e;
     color: #fff;
@@ -83,6 +83,19 @@
 -moz-box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.6);
 
   }
+  .yr_app{
+    padding: 30px;
+    margin: 30px;
+  }
+  .app_icon .app_icon_tittle{
+    margin: 20px;
+  }
+  .app_icon:hover{
+color: #eb5d1e;
+  }
+ /* .carousel-inner .active , .carousel-inner{
+width: 100%!important;
+  }*/
   </style>
 
   <!-- =======================================================
@@ -108,29 +121,13 @@
       <nav id="navbar" class="navbar">
         <ul>
           <li><a class="nav-link scrollto" href="index.php#hero">Home</a></li>
-          <li><a class="nav-link scrollto" href="#about">About Us</a></li>
           <li><a class="nav-link scrollto" href="#services">Services</a></li>
+          <li><a class="nav-link scrollto" href="#about_app">Our App</a></li>
           <li><a class="nav-link scrollto" href="#portfolio">Portfolio</a></li>
-          <li><a class="nav-link scrollto <?php if(basename($_SERVER['PHP_SELF'])=='register.php'){ echo 'active';}?>" href="register.php">Register</a></li>
+          <li><a class="nav-link scrollto" href="#about">About Us</a></li>
           <li><a class="nav-link scrollto" href="#team">Team</a></li>
-          <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
-            <ul>
-              <li><a href="#">Drop Down 1</a></li>
-              <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
-                <ul>
-                  <li><a href="#">Deep Drop Down 1</a></li>
-                  <li><a href="#">Deep Drop Down 2</a></li>
-                  <li><a href="#">Deep Drop Down 3</a></li>
-                  <li><a href="#">Deep Drop Down 4</a></li>
-                  <li><a href="#">Deep Drop Down 5</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Drop Down 2</a></li>
-              <li><a href="#">Drop Down 3</a></li>
-              <li><a href="#">Drop Down 4</a></li>
-            </ul>
-          </li>
           <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+          <li><a class="nav-link scrollto <?php if(basename($_SERVER['PHP_SELF'])=='register.php'){ echo 'active';}?>" href="register.php">Register</a></li>
           <li><a class="getstarted scrollto" href="login.php">LogIn</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>

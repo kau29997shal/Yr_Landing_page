@@ -85,7 +85,7 @@
   }
   .yr_app{
     padding: 30px;
-    margin: 30px;
+    
   }
   .app_icon .app_icon_tittle{
     margin: 20px;
